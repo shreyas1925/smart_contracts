@@ -4,9 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha"
   },
-  "author": "",
+  "author": "Shreyas Shettigar",
   "license": "ISC",
   "dependencies": {
     "ganache-cli": "^6.12.2",
