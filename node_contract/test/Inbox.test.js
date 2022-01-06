@@ -42,4 +42,12 @@ describe("Inbox", () => {
 
     assert.equal(message, INITIAL_STRING);
   });
+
+  it("setting the message", async () => {
+    // here we are modifying our contracts data
+    await inbox.methods.setMessage("Welcome All!!").send({ from: accounts[0] });
+
+    const message = await inbox.methods.message().call();
+    assert.equal(message, "Welcome All!!");
+  });
 });
