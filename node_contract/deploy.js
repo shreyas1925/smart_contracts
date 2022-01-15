@@ -3,8 +3,8 @@ const Web3 = require("web3");
 const { interface, bytecode } = require("./compile");
 
 const provider = new HDWalletProvider(
-  "involve parade furnace allow gloom insect phone analyst correct gentle awesome odor",
-  "https://rinkeby.infura.io/v3/30283e336d434130aafb8c9479e59768"
+  "volume addict mimic forum oven mushroom flush grant result poem situate ship",
+  "https://rinkeby.infura.io/v3/4a735ee5dfb14b84a8d2f19957760981"
 );
 
 const web3 = new Web3(provider);
@@ -18,9 +18,10 @@ const deploy = async () => {
       data: bytecode,
       arguments: ["hi shreyas"],
     })
+
     .send({ gas: "1000000", from: accounts[0] });
 
   console.log("Contract deployed to", result.options.address);
 };
-
+// 0xf0D0E0a6b4D945f938F66d7Fd3f5C08e2664328d
 deploy();
