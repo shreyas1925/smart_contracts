@@ -11,6 +11,7 @@ const { interface, bytecode } = require("../compile");
 let accounts;
 let inbox;
 const INITIAL_STRING = "Heyy Bro!!";
+
 beforeEach(async () => {
   // Get a list of all accounts
   // we are dealing with ethereum
